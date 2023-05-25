@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculadora de Calorías</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/9948/9948066.png"
+    />
+  </head>
+  <body>
+    <div class="min-h-screen bg-sky-300 flex justify-center items items-center">
+      <div class="bg-white px-16 py-7 rounded-md shadow-md">
+        <h1 class="text-4xl italic pb-6 flex">
+          Calculadora de Calorías
+          <span class="pl-4"
+            ><img
+              class="w-12 h-12"
+              src="https://cdn-icons-png.flaticon.com/512/9948/9948066.png"
+              alt=""
+          /></span>
+        </h1>
+        <form action="">
+          <div class="flex items-center justify-between">
+            <label for="alruta">Altura en cm:</label>
+            <input
+              placeholder="Ej: 153"
+              type="number"
+              min="10"
+              class="bg-sky-300 rounded-md border-2 border-black p-1 m-1 placeholder-white"
+              +
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="Peso">Peso en kg:</label>
+            <input
+              placeholder="Ej: 77"
+              type="number"
+              min="0"
+              class="bg-sky-300 rounded-md border-2 border-black p-1 m-1 placeholder-white"
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="edad">Edad:</label>
+            <input
+              placeholder="Ej: 25"
+              type="number"
+              min="0"
+              class="bg-sky-300 rounded-md border-2 border-black p-1 m-1 placeholder-white"
+            />
+          </div>
+          <div class="flex items-center py-4">
+            <div class="w-60">
+              <label for="sexo">Sexo:</label>
+            </div>
+            <div class="flex flex-grow">
+              <div class="flex flex-grow">
+                <input type="radio" name="options" />
+                <span>Hombre</span>
+              </div>
+              <div class="flex flex-grow justify-end">
+                <input type="radio" name="options" />
+                <span>Mujer</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="actividad">Nivel de actividad:</label>
+            <select
+              name="Perro"
+              id="actividad"
+              class="bg-sky-300 rounded-md border-2 border-black py-1 m-1"
+            >
+              <option>Ninguno</option>
+              <option>Poco activo</option>
+              <option>Moderadamente Activo</option>
+              <option>Muy Activo</option>
+              <option>Extremadamente activo</option>
+            </select>
+          </div>
+          <h2 class="flex justify-center items items-center py-2 text-2xl">
+            Resultados:
+          </h2>
+          <div class="flex items-center justify-between">
+            <label for="calorias diarias necesarias"
+              >Calorías diarias necesarias:</label
+            >
+            <input
+              placeholder="0"
+              type="number"
+              min="10"
+              class="bg-sky-300 rounded-md border-2 border-black p-1 m-1 placeholder-white"
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="altura">Calorías para perder grasa:</label>
+            <input
+              placeholder="0"
+              type="number"
+              min="10"
+              class="bg-sky-300 rounded-md border-2 border-black p-1 m-1 placeholder-white"
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="alruta">Calorías para ganar músculo:</label>
+            <input
+              placeholder="0"
+              type="number"
+              min="10"
+              class="bg-sky-300 rounded-md border-2 border-black p-1 m-1 placeholder-white"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
