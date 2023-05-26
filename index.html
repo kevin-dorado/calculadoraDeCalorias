@@ -11,19 +11,32 @@
       rel="icon"
       href="https://cdn-icons-png.flaticon.com/512/9948/9948066.png"
     />
+    <style>
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
   </head>
   <body>
-    <div class="min-h-screen bg-sky-300 flex justify-center items items-center">
-      <div class="bg-white px-16 py-4 rounded-md shadow-md">
-        <h1 class="text-4xl italic pb-6 flex">
+    <div
+      class="h-screen w-screen bg-sky-500 md:bg-sky-300 min-h-screen flex justify-center items items-center"
+    >
+      <div class="md: bg-white px-16 py-4 rounded-md shadow-md">
+        <h1 class="text-4xl italic pb-4 flex">
           Calculadora de Calorías
-          <span class="pl-4"
+          <span class="pl-3"
             ><img
               class="w-12 h-12"
               src="https://cdn-icons-png.flaticon.com/512/9948/9948066.png"
               alt=""
           /></span>
         </h1>
+        <!-- Formulario -->
         <form action="">
           <h2 class="flex justify-center items-center py-2 text-2xl">
             Ingrese sus datos:
@@ -31,6 +44,7 @@
           <div class="flex items-center justify-between">
             <label for="alruta">Altura en cm:</label>
             <input
+              required
               placeholder="Ej: 153"
               type="number"
               min="10"
@@ -41,6 +55,7 @@
           <div class="flex items-center justify-between">
             <label for="Peso">Peso en kg:</label>
             <input
+              required
               placeholder="Ej: 77"
               type="number"
               min="0"
@@ -50,6 +65,7 @@
           <div class="flex items-center justify-between">
             <label for="edad">Edad:</label>
             <input
+              required
               placeholder="Ej: 25"
               type="number"
               min="0"
@@ -62,7 +78,7 @@
             </div>
             <div class="flex flex-grow">
               <div class="flex flex-grow">
-                <input type="radio" name="options" />
+                <input required type="radio" name="options" />
                 <span class="ml-1">Hombre</span>
               </div>
               <div class="flex flex-grow justify-end">
@@ -74,6 +90,7 @@
           <div class="flex items-center justify-between">
             <label for="actividad">Nivel de actividad:</label>
             <select
+              required
               name="Perro"
               id="actividad"
               class="bg-sky-300 rounded-md border-2 border-black py-1 m-1"
@@ -94,6 +111,7 @@
             </button>
           </div>
         </form>
+        <!-- Resultados -->
         <hr class="border-2 mt-3 rounded-md border-black" />
         <h2 class="flex justify-center items-center py-2 text-2xl">
           Resultados:
@@ -103,6 +121,7 @@
             >Calorías diarias necesarias:</label
           >
           <input
+            readonly
             placeholder="0"
             type="number"
             min="10"
@@ -112,6 +131,7 @@
         <div class="flex items-center justify-between">
           <label for="altura">Calorías para perder grasa:</label>
           <input
+            readonly
             placeholder="0"
             type="number"
             min="10"
@@ -121,6 +141,7 @@
         <div class="flex items-center justify-between">
           <label for="alruta">Calorías para ganar músculo:</label>
           <input
+            readonly
             placeholder="0"
             type="number"
             min="10"
