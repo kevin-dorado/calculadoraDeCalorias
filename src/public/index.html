@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Calculadora de Calorías</title>
     <link rel="stylesheet" href="styles.css" />
+
     <link
       rel="icon"
       href="https://cdn-icons-png.flaticon.com/512/9948/9948066.png"
@@ -46,17 +47,18 @@
           <div class="flex items-center justify-between">
             <label for="alruta">Altura en cm:</label>
             <input
+              id="altura"
               required
               placeholder="Ej: 153"
               type="number"
               min="10"
               class="bg-sky-300 rounded-md border-2 border-black p-1 m-1 placeholder-white"
-              +
             />
           </div>
           <div class="flex items-center justify-between">
             <label for="Peso">Peso en kg:</label>
             <input
+              id="peso"
               required
               placeholder="Ej: 77"
               type="number"
@@ -67,6 +69,7 @@
           <div class="flex items-center justify-between">
             <label for="edad">Edad:</label>
             <input
+              id="edad"
               required
               placeholder="Ej: 25"
               type="number"
@@ -80,11 +83,11 @@
             </div>
             <div class="flex flex-grow">
               <div class="flex flex-grow">
-                <input required type="radio" name="options" />
+                <input required type="radio" name="options" id="hombre" />
                 <span class="ml-1">Hombre</span>
               </div>
               <div class="flex flex-grow justify-end">
-                <input type="radio" name="options" />
+                <input type="radio" name="options" id="mujer" />
                 <span class="ml-1">Mujer</span>
               </div>
             </div>
@@ -97,15 +100,16 @@
               id="actividad"
               class="bg-sky-300 rounded-md border-2 border-black py-1 m-1"
             >
-              <option>Ninguno</option>
-              <option>Poco activo</option>
-              <option>Moderadamente Activo</option>
-              <option>Muy Activo</option>
-              <option>Extremadamente activo</option>
+              <option value="1">Ninguno</option>
+              <option value="2">Poco activo</option>
+              <option value="3">Moderadamente Activo</option>
+              <option value="4">Muy Activo</option>
+              <option value="5">Extremadamente activo</option>
             </select>
           </div>
           <div class="flex justify-center items-center mt-6">
             <button
+              id="aceptar"
               class="rounded-full bg-sky-300 p-2 border-2 border-black px-6"
               type="submit"
             >
@@ -157,4 +161,5 @@
       </div>
     </div>
   </body>
+  <script src="main.js"></script>
 </html>
