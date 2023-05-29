@@ -1,15 +1,32 @@
 console.log("conecctado");
 function calculadora() {
-  let altura = document.getElementById("altura").value;
-  console.log("La alatura es" + altura);
+  //Hombre
+  let hombre = document.getElementById("hombre").checked;
+  //Mujer
+  let mujer = document.getElementById("mujer").checked;
 
-  let peso = document.getElementById("peso");
-  let edad = document.getElementById("edad");
+  //Validación
+  if (altura && peso && edad && (hombre || mujer)) {
+    //Altura
+    let altura = document.getElementById("altura").value;
+    localStorage.setItem("altura", altura);
+    //Peso
+    let peso = document.getElementById("peso").value;
+    localStorage.setItem("peso", peso);
+    //Edad
+    let edad = document.getElementById("edad").value;
+    localStorage.setItem("edad", edad);
+    //Ejercicio
+    let actividad = document.getElementById("actividad").value;
+    localStorage.setItem("actividad", actividad);
 
-  if (document.getElementById("hombre").checked) {
-    console.log("hombre seleccionado");
+    if (hombre) {
+      console.log("hombre seleccionado");
+    } else {
+      console.log("mujer seleccionado");
+    }
   } else {
-    console.log("mujer seleccionado");
+    alert("Por favor complete todos los campos");
   }
 }
 
@@ -18,5 +35,4 @@ let aceptar = document.getElementById("aceptar");
 aceptar.addEventListener("click", function (a) {
   a.preventDefault();
   calculadora();
-  console.log("holaaaa");
 });
