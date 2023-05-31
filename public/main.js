@@ -1,4 +1,17 @@
 console.log("conecctado");
+
+document.addEventListener("DOMContentLoaded", function () {
+  mostrarcal();
+});
+
+function mostrarcal() {
+  let caldiarias = localStorage.getItem("caldiarias");
+  if (caldiarias != null) {
+    let vercaldiarias = document.getElementById("vercaldiarias");
+    vercaldiarias.value = caldiarias;
+  }
+}
+
 function calculadora() {
   //Hombre
   let hombre = document.getElementById("hombre").checked;
@@ -18,12 +31,21 @@ function calculadora() {
     localStorage.setItem("edad", edad);
     //Ejercicio
     let actividad = document.getElementById("actividad").value;
+    console.log(actividad);
     localStorage.setItem("actividad", actividad);
 
     if (hombre) {
-      console.log("hombre seleccionado");
+      let calculohombre =
+        (66 + 13.7 * peso + 5 * altura - 6.8 * edad) * actividad;
+      console.log("calculohombre es" + calculohombre);
+      localStorage.setItem("caldiarias", Math.floor(calculohombre));
+      mostrarcal();
     } else {
-      console.log("mujer seleccionado");
+      let calculomujer =
+        (655 + 9.6 * peso + 1.8 * altura - 4.7 * edad) * actividad;
+      console.log("calculomujer es" + calculomujer);
+      localStorage.setItem("caldiarias", Math.floor(calculomujer));
+      mostrarcal();
     }
   } else {
     alert("Por favor complete todos los campos");
