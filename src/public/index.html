@@ -93,19 +93,25 @@
             </div>
           </div>
           <div class="flex items-center justify-between">
-            <label for="actividad">Nivel de actividad:</label>
-            <select
-              required
-              name="actividad"
-              id="actividad"
-              class="bg-sky-300 rounded-md border-2 border-black py-1 m-1"
-            >
-              <option value="1">Ninguno</option>
-              <option value="2">Poco activo</option>
-              <option value="3">Moderadamente Activo</option>
-              <option value="4">Muy Activo</option>
-              <option value="5">Extremadamente activo</option>
-            </select>
+            <div>
+              <label for="actividad">Nivel de actividad:</label>
+            </div>
+            <div class="flex justify-end">
+              <select
+                required
+                name="actividad"
+                id="actividad"
+                class="bg-sky-300 rounded-md border-2 border-black py-1 m-1 w-48"
+              >
+                <option value="1">Ninguno</option>
+                <option value="2">ejercicio de 1 a 3 veces por semana</option>
+                <option value="3">ejercicio de 3 a 5 veces por semana</option>
+
+                <option value="4">ejercicio de 6 a 7 veces por semana</option>
+
+                <option value="5">ejercicio de 4 o mas horas diarias</option>
+              </select>
+            </div>
           </div>
           <div class="flex justify-center items-center mt-6">
             <button
