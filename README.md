@@ -4,6 +4,6 @@ Este programa te permite calcular tus calorías diarias necesarias, las caloría
 # Funcionamiento
 Para usar el programa, solo tienes que introducir tus datos en los campos correspondientes y pulsar el botón de calcular. El programa te mostrará los resultados en la pantalla y los guardará en el local storage para que puedas consultarlos más tarde.
 
-# Ejemplo
-Aquí puedes ver un ejemplo de cómo se ve el programa:
+# Demo
+Puedes ver una demostración del proyecto en este enlace: (https://kevin-dorado.github.io/calculadoraDeCalorias/)
 ![CalPhoto](https://raw.githubusercontent.com/kevin-dorado/calculadoraDeCalorias/main/CalPhoto.png "Calculadora de Calorías")
