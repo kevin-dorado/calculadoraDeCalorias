@@ -1,4 +1,4 @@
-# Calculadora de Calorías
+# Calculadora de Calorías 🧮📟
 Este programa te permite calcular tus calorías diarias necesarias, las calorías para perder grasa y las calorías para ganar músculo según tu altura, peso, edad, sexo y nivel de actividad. Está hecho con HTML, JavaScript y Tailwind.
 
 # Funcionamiento
