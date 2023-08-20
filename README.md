@@ -1,4 +1,4 @@
-# Calculadora de Calorías <img src="https://cdn-icons-png.flaticon.com/512/9948/9948066.png" width="40" height="40">
+# Calculadora de Calorías <img src="https://cdn-icons-png.flaticon.com/512/9948/9948066.png" width="45" height="45">
 Este programa te permite calcular tus calorías diarias necesarias, las calorías para perder grasa y las calorías para ganar músculo según tu altura, peso, edad, sexo y nivel de actividad. Está hecho con HTML, JavaScript y Tailwind.
 
 # Funcionamiento
