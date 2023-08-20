@@ -8,3 +8,6 @@ Para usar el programa, solo tienes que introducir tus datos en los campos corres
 Puedes ver una demostración del proyecto en este enlace: (https://kevin-dorado.github.io/calculadoraDeCalorias/)
 
 ![CalPhoto](https://raw.githubusercontent.com/kevin-dorado/calculadoraDeCalorias/main/CalPhoto.png "Calculadora de Calorías")
+
+ # Licencia
+Este proyecto está bajo la licencia MIT. Puedes ver el archivo LICENSE para más detalles.
