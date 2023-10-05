@@ -25,20 +25,30 @@
   </head>
   <body>
     <div
-      class="bg-sky-300 md:bg-sky-300 py-2 min-h-screen overflow-y flex justify-center items items-center"
+      class="bg-sky-300 md:bg-sky-300 py-2 min-h-screen overflow-y flex justify-center  items-center"
     >
+    
       <div class="p-2 mx-4 px-2 bg-white md:px-7 rounded-md shadow-md">
-        <h1
-          class="text-2xl md:text-3xl italic pb-1 flex justify-center items-center"
-        >
-          Calculadora de Calorías
-          <span class="pl-3"
-            ><img
-              class="w-12 h-12"
-              src="https://cdn-icons-png.flaticon.com/512/9948/9948066.png"
-              alt=""
-          /></span>
-        </h1>
+        <div class="flex">
+          <h1
+            class="text-2xl md:text-3xl italic pb-1 flex justify-center items-center"
+          >
+            Calculadora de Calorías
+            <span class="pr-3"
+              ><img
+                class="w-12 h-12"
+                src="https://cdn-icons-png.flaticon.com/512/9948/9948066.png"
+                alt=""
+            /></span>
+          </h1>
+          <div class="flex bg-slate-100 rounded-md  justify-end">
+            
+            <a class="p-1  flex items-center justify-center border-2 rounded-md hover:bg-slate-200 hover:border-slate-300" href="/imc.html">Calcular IMC
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-corner-down-right"><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/>
+                </svg> 
+            </a>
+          </div>
+        </div>
         <!-- Formulario -->
         <form action="">
           <h2 class="flex justify-center items-center py-2 text-xl md:text-2xl">
@@ -78,7 +88,7 @@
             />
           </div>
           <div class="flex items-center py-4">
-            <div class="w-36 md:w-52">
+            <div class="w-36 md:w-72">
               <label for="sexo">Sexo:</label>
             </div>
             <div class="flex flex-grow">
